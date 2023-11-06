@@ -1,0 +1,141 @@
+* {
+  /*zerando margin e pedding de todos os elementos da pagina*/
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body{
+  background-color:#dadada;
+}
+.user_atalhos{
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+section{
+  display: flex;
+}
+.config img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.config{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top:20px;
+}
+.config a{
+  padding: 5px;
+  margin-top: -20px;
+  border-radius: 10px;
+  color: black;
+  text-decoration: none;
+}
+.config a ion-icon{
+color: rgb(170, 24, 24);
+margin-right: 5px;
+transform: translateY(1.5px);
+}
+.post_users{
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  gap: 15px;
+  margin: 10px auto 0 auto;
+}
+.postbox img{
+  margin: 5px -15px 5px 12px;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+.postbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 325px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+}
+
+.ti_post{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ti_post ion-icon{
+  color: rgb(138, 5, 5);
+  width: 22px;
+  height: 22px;
+  margin-right:20px ;
+}
+.ti_post h4{
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+
+.responsive-nav{
+  display: none;
+} 
+
+.escond{
+  display: none;
+} 
+
+.config .tira{
+  opacity: 0;
+  pointer-events: none;
+}
+@media screen and (max-width: 580px) {
+  .post_users{
+    display: grid;
+    grid-template-columns: 90%;
+    gap: 15px;
+    margin: 10px auto 0 auto;
+  }
+
+  .config img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+  } 
+
+  .config h1{
+    font-size: 16px;
+  } 
+
+  .config a{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+  }
+
+  .escond{
+    display: block;
+  }
+  .escond ion-icon{
+    width: 20px;
+    height: 20px;
+    margin:0 5px;
+  }
+  
+  .show{
+    display: none;
+  }
+  .config .tira{
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .post_users{
+    margin-bottom: 200px;
+  }
+
+}
+

@@ -1,0 +1,626 @@
+* {
+  /*zerando margin e pedding de todos os elementos da pagina*/
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+body{
+  background-color: #cccccc;
+  overflow-x:hidden;
+}
+/*------------------ NAVEGAÇÃO DO SITE -------------*/
+a {
+
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+ 
+  opacity: 0.7;
+}
+
+.logo {
+  height: 85px;
+  width: 220px;
+}
+
+/*------------------ CONTEUDO PRINCIPAL DO SITE -------------*/
+
+.container {
+  display: flex;
+  padding: 13px 5%;
+  gap: 90px;
+  background-color: #dadada;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.post-container {
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  color: #626262;
+  margin: 20px 0;
+}
+.post-container .foto-da-postagem {
+  width: 100%;
+  height: 100%;
+}
+
+.main-content {
+  flex-basis: 47%;
+  margin-left: 200px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile img {
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-profile p {
+  margin-bottom: -5px;
+  font-weight: 500;
+  color: #626262;
+}
+
+.user-profile small {
+  font-size: 12px;
+}
+
+.post-input-container {
+  padding-left: 55px;
+  padding-top: 20px;
+}
+
+.add-post-links {
+  display: flex;
+  margin-top: 10px;
+}
+.add-post-links a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #626262;
+  margin-right: 30px;
+  font-size: 13px;
+}
+.add-post-links a img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.user-profile span {
+  font-size: 12px;
+  color: #9a9a9a;
+}
+
+/*inicio postagem*/
+.post-text {
+  color: #000000;
+  margin: 15px 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.post-text span {
+  color: #1e1e1e;
+  font-weight: 500;
+}
+.post-text a {
+  text-decoration: none;
+  color: #4e0000;
+}
+
+.post-img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+
+.post-row {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.post-row a {
+  color: #4e0000;
+}
+
+.activity-icons div img {
+  height: 18px;
+  margin-right: 10px;
+}
+
+.activity-icons div {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 30px;
+  font-size: 14px;
+}
+
+.post-profile-icon {
+  display: flex;
+  align-items: center;
+}
+.post-profile-icon img {
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.load-more-btn {
+  display: flex;
+  margin: auto;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #4e0000;
+  color: #4e0000;
+  background: transparent;
+  border-radius: 4px;
+}
+
+/*------------------ BARA LATERAL DO SITE -------------*/
+.right-sidebar {
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+  flex-basis: 25%;
+  position: sticky;
+  top: 70px;
+  align-self: flex-start;
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  color: #626262;
+}
+.sidebar-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.event {
+  display: flex;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.event p {
+  font-size: 12px;
+}
+.event a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #626262;
+}
+.left-event {
+  border-radius: 10px;
+  height: 65px;
+  width: 65px;
+  margin-right: 15px;
+  padding-top: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+}
+
+.left-event sapan {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4e0000;
+  color: #fff;
+  font-size: 10px;
+  padding: 4px 0;
+  text-transform: capitalize;
+}
+
+.sidebar-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.sidebar-title a {
+  text-decoration: none;
+  color: #4e0000;
+  font-size: 14px;
+}
+
+.right-sidebar h4 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.sidebar-ads {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.responsive-nav {
+  display: none;
+}
+
+/*3 pontinhos das publicações*/
+
+#droppoints:hover {
+  opacity: 1;
+}
+
+
+.container_tri ion-icon {
+  color: #4e0000;
+  scale: 1.3;
+}
+.dropdown {
+  background-color: #fff;
+  position: absolute;
+ 
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+  border-radius: 3px;
+  color: #4e0000;
+  opacity: 0;
+  pointer-events: none;
+ 
+  margin: 10px 0;
+}
+.dropdown ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+.dropdown ul li {
+  padding: 15px;
+  width: 80%;
+}
+
+.dropdown ul li ion-icon {
+  padding-right: 10px;
+  color: #4e0000;
+}
+.dropdown ul li:not(:last-child) {
+  border-bottom: 1px solid #4e0000;
+}
+
+.hide {
+  transform: translatey(0);
+  transform: translate(-87%);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/*fim postagem*/
+
+/*inicio formulario pra envio de postagem*/
+.write-post-container {
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+  width: 100%;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  color: #626262;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+  box-shadow: 0 0 2px rgb(0, 0, 0);
+  margin-left: 25px;
+}
+
+.user-profile p {
+  margin-bottom: -5px;
+  font-weight: 500;
+  color: #626262;
+}
+
+.post-container {
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  color: #626262;
+  margin: 10px 0;
+}
+
+.user-profile span {
+  font-size: 12px;
+  color: #9a9a9a;
+}
+.container_form {
+  padding: 10px;
+  margin: 20px;
+  margin-bottom: -10px;
+}
+
+.container_form textarea {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  resize: none;
+}
+
+.container_form input[type="file"] {
+  display: none;
+}
+.container_form .btn_foto {
+  display: flex;
+  margin-top: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  width: 150px;
+  padding: 5px;
+}
+.container_form .btn_foto:active {
+  background-color: #f7f7f7;
+  border-radius: 4px;
+  scale: 0.98;
+}
+.container_form .btn_foto ion-icon {
+  margin-top: -4px;
+  color: rgb(133, 43, 43);
+  padding-right: 8px;
+  height: 30px;
+  width: 30px;
+}
+
+.tripoints{
+  display: none;
+}
+
+.btn_file{
+  height: 10%;
+  padding: 4px 7px;
+  margin-top: 10px;
+  border-radius: 40px;
+  background: #5e0404;
+  border: none;
+  cursor: pointer;
+  font-size: .9em;
+  font-weight: 600;
+  color: #dadada;
+}
+.btn_file:active{
+ scale: .97;
+}
+
+.form_event input[type=text]{
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  resize: none;
+}
+.form_event input[type=date]{
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  resize: none;
+}
+
+
+.right-event a ion-icon{
+  margin-top: 20px;
+    color: #740000; 
+    width: 30px;
+    height: 20px;
+}
+
+.post-container .foto-da-postagem{
+width: 100%;
+height: 600px;
+object-fit: cover;
+}
+/* 
+.enviado{
+  
+} */
+
+
+/*configuração dos elementos do dom*/
+
+/* animaçoes para css */
+/* animaçoes para css */
+
+/*fim formulario pra envio de postagem*/
+
+/*--------------------------------------- @MEDIA -----------------------------------------------*/
+
+@media screen and (max-width: 580px) {
+  html {
+    width: 100%;
+    background-color: #740000;
+    overflow-x: hidden;
+  }
+
+  /*--------------------------------------------------*/
+
+  /*----------------------- main content ---------------------------*/
+
+  main {
+    overflow-x: hidden;
+    display: flex;
+  }
+
+  .container {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    /* justify-content: space-around; */
+    padding: 13px 5%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    margin-bottom: 90px;
+    order: 2;
+  }
+
+  .post-container {
+    width: 90vw;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+    margin: 20px auto;
+  }
+  .main-content {
+    margin: 0px;
+  }
+
+  /* ----------- RIGT SIDEBAR RESPONSIVE ------------ */
+  /* .right-sidebar{
+  display: none;
+} */
+
+  /*------------------ BARA LATERAL DO SITE -------------*/
+
+  .right-sidebar {
+    /* overflow-x: scroll; */
+    /* background: #a4a; */
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    /* height: 130px; */
+    flex-basis: 0%;
+    position: static;
+    top: 0px;
+    align-self: flex-start;
+    /* height: 100vh;  */
+    background: #fff;
+    padding: 20px;
+    color: #626262;
+    order: -1;
+    border-bottom: 1px solid #4e0000;
+  }
+
+  .right-sidebar img {
+    display: none;
+  }
+
+  .responsive {
+    display: none;
+  }
+  .sidebar-title {
+    display: none;
+  }
+  .sidebar-title {
+    display: none;
+  }
+
+  .event {
+    display: flex;
+    font-size: 14px;
+    margin-left: 20px;
+  }
+
+  .event p {
+    font-size: 12px;
+  }
+  .event a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #626262;
+  }
+
+  .left-event {
+    border-radius: 10px;
+    height: 65px;
+    width: 65px;
+    margin-right: 15px;
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+  }
+
+  .left-event sapan {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4e0000;
+    color: #fff;
+    font-size: 10px;
+    padding: 4px 0;
+  }
+
+  /*inicio formulario pra envio de postagem*/
+  .write-post-container {
+    width: 92.4%;
+    background-color: #fff;
+    border-radius: 0px;
+    padding: 20px;
+    color: #626262;
+    border-top: 3px solid #4e0000;
+  }
+
+  html {
+    background-color: #cccccc;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .btn_file{
+    width: 29%;
+    height: 20%;
+    padding: 5px 5px 5px 5px;
+    margin-top: 10px;
+    border-radius: 40px;
+    background: #5e0404;
+    border: none;
+    cursor: pointer;
+    font-size: .9em;
+    font-weight: 600;
+    color: #dadada;
+  } 
+
+  .form_event{
+    display: none;
+  }
+
+  .post-container .foto-da-postagem{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    }
+    
+
+
+  
+}

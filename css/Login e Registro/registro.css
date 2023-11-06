@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  overflow: hidden;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background: #dadada;
+}
+
+.mainbox{
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 600px;
+  width: 80%;
+  background-color: #4e0000;
+  border-radius: 10px;
+}
+.benvenido h1{
+  margin-bottom: 40px;
+  color: #dfdfdf;
+  text-align: center;
+  font-size: 48px;
+}
+.benvenido{
+  margin-left: 2%;
+  margin-top: 5em;
+}
+.benvenido h1{
+  color: #dfdfdf;
+  text-align: center;
+  font-size: 48px;
+}
+.form-box {
+  position: relative;
+  width: 450px;
+  height: 500px;
+  background-color: #dadada;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+  border-radius: 10px;
+}
+h2 {
+  font-size: 2em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.inputbox {
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+  border-bottom: 2px solid #000000;
+}
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #000000;
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
+}
+input:focus ~ label,
+input:focus ~ :valid {
+  top: -15px;
+}
+.inputbox input {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 50px 5px 0px 5px;
+  color: #000000;
+}
+
+.inputbox ion-icon {
+  position: absolute;
+  right: 8px;
+  color: #000000;
+  font-size: 1.2em;
+  top: 20px;
+}
+
+form .sub {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background: #5e0404;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  color: #dadada;
+}
+
+form .sub:hover {
+  background-color: #dfdfdf;
+  transition: 0.5s;
+  border: 0.5px solid rgb(105, 105, 105);
+  color: #000000;
+  transition: 1s;
+}
+
+.login {
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+  margin: 25px 0 10px;
+  padding-left: 5px;
+}
+.login p a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  padding-left: 5px;
+}
+
+.login p a:hover {
+  text-decoration: underline;
+}

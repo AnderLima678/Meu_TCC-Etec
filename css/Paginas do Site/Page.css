@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+html{
+width: 100vw;
+overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #4e0000;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  height: 85px;
+  width: 220px;
+}
+
+/*----------------------main-------------------*/
+
+body{
+  width: 100%;
+}
+main {
+  background-color: #4e0000;
+}
+
+.letras {
+  font-size: 50px;
+  position: absolute;
+  top: 400px;
+  left: 15%;
+  color: #fff;
+  text-transform: capitalize;
+}
+.letras a {
+  font-size: 30px;
+  border: 1px solid #ffffff;
+  padding: 10px;
+  margin-right: 15px;
+  font-weight: 400;
+}
+.letras a:active {
+  font-size: 29px;
+  opacity: 1;
+}
+
+.atalho-campanhas {
+  background-color: #dadada;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.atalho-campanhas h1 {
+  color: #000000;
+  margin-top: 100px;
+  font-size: 40px;
+}
+
+.cards {
+  height: 700px;
+  width: 100%;
+  padding-top: 100px;
+  color: #000000;
+  background-color: #4e0000;
+}
+.cards section {
+  margin-left: 5%;
+  display: flex;
+}
+
+.quemsomos {
+  margin-left: 60px;
+  margin-top: 130px;
+  color: #dadada;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.quemsomos h2 {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.quemsomos p {
+  font-size: 18px;
+  text-align: left;
+  width: 500px;
+  margin-top: 20px;
+  line-height: 30px;
+}
+.quemsomos a {
+  text-transform: capitalize;
+  padding: 10px 5px;
+  margin-top: 30px;
+  width: 150px;
+  border: 1px solid #dadada;
+}
+
+.info1 {
+  margin: 120px 0 200px 150px;
+}
+
+.info1 img {
+  width: 450px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.responsive-nav {
+  display: none;
+}
+
+.sla {
+  height: 700px;
+  background-color: #dadada;
+}
+
+/*  --------- PARTE DO @MEDIA DO SITE --------- */
+
+
+
+
+@media screen and (max-width: 580px) {
+  body {
+    width: 100%;
+    background-color: #dadada;
+    overflow-x: hidden;
+  }
+
+  /*--------------------------------------------------*/
+
+  .letras {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .letras h1 {
+    color: #fff;
+  }
+
+  .letras a {
+    display: block;
+    font-size: 30px;
+    width: 200px;
+    margin-top: 30px;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    font-weight: 400;
+  }
+  .letras a:active {
+    font-size: 29px;
+    opacity: 1;
+  }
+
+  /*-------------------------------------------------*/
+
+  .logo {
+    height: 80px;
+    width: 220px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    height: 1200px;
+    padding-top: 100px;
+    color: #000000;
+    background-color: #4e0000;
+  }
+  .cards section {
+    display: flex;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quemsomos {
+    order: 1;
+    margin-left: 20px;
+    margin-top: 29px;
+    color: #dadada;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  .quemsomos h2 {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .quemsomos p {
+    font-size: 18px;
+    text-align: left;
+    width: 80%;
+    margin-top: 20px;
+    line-height: 30px;
+  }
+  .quemsomos a {
+    text-transform: capitalize;
+    padding: 10px 5px;
+    margin-top: 30px;
+    width: 150px;
+    border: 1px solid #dadada;
+  }
+
+  .info1 {
+    order: 1;
+    margin: 0 auto;
+  }
+
+  .info1 img {
+    order: 2;
+    position: relative;
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 5%;
+  }
+
+  .info1 h1 {
+    display: none;
+  }
+
+  .slider{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+}

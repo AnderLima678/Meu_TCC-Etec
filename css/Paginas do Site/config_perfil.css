@@ -1,0 +1,335 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.responsive-nav{
+    display: none;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.barra_lateral{
+    background-color: #dfdddd;
+    display:flex;
+    flex-direction: column;
+    color: #4e0000; 
+    border-right: 1px solid black;
+    height: 100vh;
+}
+.barra_lateral h1{
+    margin: 30px;
+}
+.barra_lateral a{
+    display: flex;
+    margin: 30px;
+    align-items: center;
+    color: #4e0000;
+    /* border: 1px solid rgba(0, 0, 0, 0.4); */
+    padding: 2.5%;
+    width: 50%;
+    border-radius: 10px;
+    transition: .5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    font-size: 18px;
+}
+.barra_lateral a:hover{
+    color: #960303;
+    opacity: 1;
+}
+
+
+ion-icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+
+
+
+.main_area img{
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   object-fit: cover;
+   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+.main_area form input, label{
+    margin-bottom: 10px;
+}
+.main_area form label{
+    color: #4e0000;
+    font-size: 18px;
+}
+.main_area form label:hover{
+    color: #000000;
+}
+
+
+.hide_it{
+    opacity: 0;
+    pointer-events: none;
+}
+
+input[type=text], input[type=file]{
+    margin-top: 50px;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    resize: none;
+}
+
+form input[type=file]{
+    width: 70px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+ form .env_username{
+    width: 10%;
+    height: 25px;
+    border-radius: 40px;
+    background: #610202;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: #dadada;
+} 
+
+/*FIM DAS CONFIGURAÇOES GERAIS*/
+
+  .tripoints, .dropdown{
+    display: none;
+  }
+
+
+
+  /*SEPARAÇÃO DE PAGINAS*/
+
+
+
+.container_all{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.formulario1, .formulario2 {
+    /* border: 1px solid black;     */
+    margin: 5%;
+    padding: 5%;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+}
+.formulario1 h1 {
+    text-align: center;
+}
+
+.formulario2{
+    display: flex;
+}
+
+.formulario2 form{
+    display: flex;
+    padding:0 10px ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    margin:0px 15px;
+}
+.formulario2 form label{
+    margin-bottom: -10px;
+    cursor: pointer;
+}
+.formulario2 form label ion-icon{
+    margin-bottom: -10px;
+}
+.formulario2 form input[type=submit]{
+  
+    width: 45%;
+    /* height: 10%; */
+    padding: 2.5px 2.5px 2px 0;
+    border-radius: 40px;
+    background: #5e0404;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 400;
+    color: #dadada;
+}
+.formulario2 form input[type=submit]:active{
+    scale: 0.98;   
+}
+
+@media screen and (max-width: 580px) {
+    .container{
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+    }
+
+    section{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 80%;
+    }
+
+    .barra_lateral{
+        background-color: #dfdddd;
+        display:flex;
+        flex-direction:row;
+        color: #4e0000; 
+        border-right: 1px solid black;
+        height: 12vh;
+    }
+    .barra_lateral h1{
+        margin: 30px;
+        text-align: center;
+    }
+    .barra_lateral a{
+        display: flex;
+        margin: 30px;
+        align-items: center;
+        color: #4e0000;
+        /* border: 1px solid rgba(0, 0, 0, 0.4); */
+        padding: 2.5%;
+        width: 50%;
+        border-radius: 10px;
+        transition: .5s;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4);
+        font-size: 18px;
+    }
+    .barra_lateral a:hover{
+        color: #960303;
+        opacity: 1;
+    }
+    
+    ion-icon{
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+    
+   
+    .tripoints, .dropdown{
+        display: block;
+      }
+
+    .barra_n_resp{
+        display: none;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .dropdown {
+        width: 200px;
+        background-color: #e0e0e0;
+       transform: 1s;
+       position: absolute;
+        top: 150px;
+        right: 10px;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+        transform: translateX(-10px);
+    }
+    .dropdown ul li{
+        list-style: none;
+    }
+    .dropdown ul li a{
+        display: flex;
+        margin: 0px;
+        align-items: center;
+        color: #4e0000;
+        /* border: 1px solid rgba(0, 0, 0, 0.4); */
+        padding: 5%;
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0px;
+        font-size: 18px;
+    }
+    .container_tri ion-icon{
+       width: 70px;
+       height: 50px;
+       position: absolute;
+       right: 10px;
+       top: 100px;
+    }
+
+    .container_all{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .formulario1, .formulario2 {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black;     */
+        margin: 5%;
+        padding: 5%;
+        box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+    }
+
+    .formulario1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario2{
+        display: flex;
+        margin-bottom: 100px;
+    }
+    
+    
+    .formulario2 form{
+        display: flex;
+        padding:0 10px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: none;
+        margin:20px 15px;
+    }
+    .formulario2 form:not(:last-child){
+        border-bottom:1px solid black;
+    }
+    .formulario2 form label{
+        font-size: 20px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    .formulario2 form label ion-icon{
+        margin-bottom: -10px;
+    }
+    .formulario2 form input[type=submit]{
+        margin-bottom: 40px;
+        width: 45%;
+        /* height: 10%; */
+        padding: 2.5px 2.5px 2px 0;
+        border-radius: 40px;
+        background: #5e0404;
+        border: none;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: 400;
+        color: #dadada;
+    }
+    .formulario2 form input[type=submit]:active{
+        scale: 0.98;   
+    }
+    
+}
+
+
+

@@ -1,0 +1,327 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.responsive-nav{
+    display: none;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.barra_lateral{
+    background-color: #dfdddd;
+    display:flex;
+    flex-direction: column;
+    color: #4e0000; 
+    border-right: 1px solid black;
+    height: 100vh;
+}
+.barra_lateral h1{
+    margin: 30px;
+}
+.barra_lateral .link{
+    display: flex;
+    margin: 30px;
+    align-items: center;
+    color: #4e0000;
+    /* border: 1px solid rgba(0, 0, 0, 0.4); */
+    padding: 2.5%;
+    width: 50%;
+    border-radius: 10px;
+    transition: .5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    font-size: 18px;
+}
+.barra_lateral .link:hover{
+    color: #960303;
+    opacity: 1;
+}
+
+ion-icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+
+.main_area{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+.main_area form{
+    display: flex;
+    flex-direction: column;
+}
+.main_area form img{
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+}
+.main_area form input, label{
+    margin-bottom: 10px;
+}
+.main_area form label{
+    color: #4e0000;
+    font-size: 18px;
+}
+.main_area form label:hover{
+    color: #000000;
+}
+.main_area h1{
+    margin: 3%;
+    margin-left: 0px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 10%;
+}
+.formulario_mudar{
+    margin-top: 10%;
+    margin-right: 20%;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+    padding:6% 8%;
+    border-radius: 10px;
+}
+.formulario_mudar h3{
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.formulario_mudar form{
+    width: 100%;
+    padding: 5px;
+  }
+.formulario_mudar form label{
+    margin-top: 15px;
+  }
+.formulario_mudar .keep{
+    margin-bottom: -5px;
+    margin-left: -15px;
+    scale: 1;
+    color: #4e0000;
+  }
+.formulario_mudar form label ion-icon{
+    margin-bottom: -5px;
+  }
+.formulario_mudar form input[type=submit]{
+    width: 50%;
+    padding: 5px;
+  }
+
+
+.hide_it{
+    opacity: 0;
+    pointer-events: none;
+}
+
+input[type=text]{
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    resize: none;
+}
+.dois input[type=text]{
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    resize: none;
+}
+
+input[type=submit]{
+    width: 10%;
+    height: 10%;
+    border-radius: 40px;
+    background: #5e0404;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: #dadada;
+
+}
+input[type=submit]:active{
+    scale: 0.98;    
+}
+form input[type=file]{
+    width: 70px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+ form .env_username{
+    width: 10%;
+    height: 25px;
+    border-radius: 40px;
+    background: #610202;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: #dadada;
+} 
+
+/*FIM DAS CONFIGURAÇOES GERAIS*/
+
+.troca_senha{
+    margin-top: 10%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    resize: none;
+  }
+
+  .tripoints, .dropdown{
+    display: none;
+  }
+
+
+
+  /*SEPARAÇÃO DE PAGINAS*/
+
+
+
+.container_all{
+    display: grid;
+    grid-auto-columns: 40% 40%;
+
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+} 
+
+.formulario1, .formulario2 {
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+    
+}
+
+.msg{
+    text-align: center;
+    color: #960303;
+    margin: 20px 0;
+}
+.msg2{
+    text-align: center;
+    color: #0d9e45;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        display: grid;
+        gap: 0;
+        grid-template-columns: 100%;
+        align-items: center;
+    }
+
+    section{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 80%;
+    }
+
+    .barra_lateral{
+        background-color: #dfdddd;
+        display:flex;
+        flex-direction:row;
+        color: #4e0000; 
+        border-right: 1px solid black;
+        height: 12vh;
+    }
+    .barra_lateral h1{
+        margin: 30px;
+        text-align: center;
+    }
+    .barra_lateral a{
+        display: flex;
+        margin: 30px;
+        align-items: center;
+        color: #4e0000;
+        /* border: 1px solid rgba(0, 0, 0, 0.4); */
+        padding: 2.5%;
+        width: 50%;
+        border-radius: 10px;
+        transition: .5s;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4);
+        font-size: 18px;
+    }
+    .barra_lateral a:hover{
+        color: #960303;
+        opacity: 1;
+    }
+    
+    ion-icon{
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+    
+   
+    .tripoints, .dropdown{
+        display: block;
+      }
+
+    .barra_n_resp{
+        display: none;
+    }
+
+    .formulario_mudar{
+        margin-top: 10%;
+        margin-left: 5%;
+        box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+        padding:6% 8%;
+        border-radius: 10px;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .dropdown {
+        width: 200px;
+        background-color: #e0e0e0;
+       transform: 1s;
+       position: absolute;
+        top: 150px;
+        right: 10px;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+        transform: translateX(-10px);
+    }
+    .dropdown ul li{
+        list-style: none;
+    }
+    .dropdown ul li a{
+        
+        display: flex;
+        margin: 0px;
+        align-items: center;
+        color: #4e0000;
+        /* border: 1px solid rgba(0, 0, 0, 0.4); */
+        padding: 5%;
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0px;
+        font-size: 18px;
+    }
+    .container_tri ion-icon{
+       width: 70px;
+       height: 50px;
+       position: absolute;
+       right: 10px;
+       top: 100px;
+    }
+    
+    
+}
+
+
+
